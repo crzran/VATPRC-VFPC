@@ -40,11 +40,15 @@ VATPRC VFPC (VATSIM 中华人民共和国分部虚拟飞行计划检查器)是�
 - 限制机型
 
 ## How to use:
-- Load up the plugin VFPC.dll
+- unzip the file in the latest release and drap the entire folder into your /All/Plugins
+- Load up the plugin VFPC.dll in euroscope in "other set - plugin"
 - Add Tag Item type "VATPRC VFPC/VFPC" & function "VATPRC VFPC/ Check FP Menu" to Departure List, it is recommended to set the header name be VFPC and the width be 5
+  ![image](https://github.com/crzran/VATPRC-VFPC/assets/111409071/734e63a7-9148-42e5-b85d-00df5ea0663d)
 
-- 加载 VFPC.dll
+- 把最新release中的rar解压并放入/All/Plugins
+- 在euroscope-other set-plugin 中加载 VFPC.dll
 - 在dep list添加 “VATPRC VFPC/VFPC", 然后设置左键/右键功能为"VATPRC VFPC/ Check FP Menu"。建议设置header name = VFPC, 宽度为5
+ ![image](https://github.com/crzran/VATPRC-VFPC/assets/111409071/734e63a7-9148-42e5-b85d-00df5ea0663d)
 
 ### How to define configurations
 The 'Sid.json'-File is using the JSON file format. Each airport is an object containing the "icao" and a sub-object "sids", which contains all definitions & restrictions. Inside this sub-object are all available SIDs defined by the first route waypoint (i.e. "AMLUH" for AMLUH1B, AMLUH9C, AMLUH9D & AMLUH9G).
