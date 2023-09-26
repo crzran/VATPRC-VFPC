@@ -1,0 +1,163 @@
+[
+    {
+        "icao":"ZSPD",
+        "sids":{
+            "SAS":[
+                {
+                    "destinations":["ZSNJ"],
+                    "suffix":["91D", "92D", "81D", "82D"],
+                    "allowed_fls":["157"],
+                    "FLAS": "FL157 (4800m)"
+                },
+                {
+                    "destinations":["ZSCG", "ZSYA"],
+                    "suffix":["91D", "92D", "81D", "82D"],
+                    "allowed_fls":["118", "138"],
+                    "FLAS":"FL118 (3600m), FL138 (4200m) "
+                }
+            ],
+            "PIK":[
+                {
+                    "airways":"G330",
+                    "suffix":["95D", "96D", "81D", "84D"],
+                    "allowed_fls":["281", "301", "321", "341", "361", "381", "401"],
+                    "FLAS":"Metric RVSM Westbound Levels"
+                },
+                {
+                    "destinations":["ZSJN"],
+                    "suffix":["95D", "96D", "81D", "84D"],
+                    "allowed_fls":["236", "256", "276"],
+                    "FLAS":"FL236 (7200m), FL256 (7800m), FL176 (8400m)"
+                },
+                {
+                    "destinations":["ZSOF"],
+                    "suffix":["95D", "96D", "81D", "84D"],
+                    "allowed_fls":["157"],
+                    "FLAS":"FL157 (4800m)"
+                },
+                {
+                    "destinations":["ZSYN"],
+                    "suffix":["95D", "96D", "81D", "84D"],
+                    "allowed_fls":["138"],
+                    "FLAS":"FL138 (4200m)"
+                }      
+            ],
+            "NXD":[
+                {
+                    "destinations":["ZSYW"],
+                    "suffix":["91D", "92D", "81D", "82D"],
+                    "allowed_fls":["197"],
+                    "FLAS":"FL197 (6000m)"
+                },
+                {
+                    "destinations":["ZSFZ", "ZSAM", "ZSQZ"],
+                    "suffix":["91D", "92D", "81D", "82D"],
+                    "allowed_fls":["256", "236"],
+                    "FLAS":"FL256 (7800m), FL236 (7200m)"
+                },
+                {
+                    "airways":"W131",
+                    "suffix":["91D", "92D", "81D", "82D"],
+                    "allowed_fls":["281", "301", "321", "341", "361", "381", "401"],
+                    "FLAS":"Metric RVSM Westbound Levels"
+                }
+            ],
+            "AND":[
+                {
+                    "destinations":["ZSWZ"],
+                    "suffix":["91D","81D"],
+                    "allowed_fls":["177"],
+                    "FLAS":"FL177 (5400m)"
+                },
+                {
+                    "destinations":["ZSHC", "ZSNB"],
+                    "suffix":["91D","81D"],
+                    "allowed_fls":["79"],
+                    "FLAS":"7900ft (2400m)"
+                }
+            ],
+            "HSN":[
+                {
+                    "destinations":["ZSAM", "ZSQZ"],
+                    "suffix":["92D","91D", "82D", "81D"],
+                    "allowed_fls":["276", "301"],
+                    "FLAS":"FL276 (8400m), FL301 (9200m)"  
+                },
+                {
+                    "destinations":["ZSZS"],
+                    "suffix":["92D","91D", "82D", "81D"],
+                    "allowed_fls":["79"],
+                    "FLAS":"7900ft (2400m)" 
+                },
+                {
+                    "destinations":["ZSFZ"],
+                    "suffix":["92D","91D", "82D", "81D"],
+                    "allowed_fls":["276"],
+                    "FLAS":"FL276 (8400m)" 
+                },
+                {
+                    "destinations":["ZGOW"],
+                    "suffix":["92D","91D", "82D", "81D"],
+                    "allowed_fls":["276", "301", "321"],
+                    "FLAS":"FL276 (8400m), FL301 (9200m), FL321 (9800m) "  
+                },
+                {
+                    "airways":"W13",
+                    "suffix":["92D","91D", "82D", "81D"],
+                    "allowed_fls":["301", "321", "341", "361", "381", "401"],
+                    "FLAS":"Above 8400m Metric RVSM Westbound Levels"
+                }
+            ],
+            "MIG":[
+                {
+                    "airways":"A326 APITO DCT MIKES DCT AKVAS",
+                    "suffix":["92D", "91D", "82D", "81D"],
+                    "allowed_fls":["250", "290", "310", "390"],
+                    "FLAS": "FL250, FL290, FL310, FL390"
+                },
+                {
+                    "airways":"B591 KASKA",
+                    "suffix":["92D", "91D", "82D", "81D"],
+                    "allowed_fls":["300", "320"],
+                    "FLAS":"FL300, FL320"
+                }
+            ],
+            "LAM":[
+                {
+                    "destinations":["RKPC"],
+                    "suffix":["92D", "95D", "82D", "81D"],
+                    "allowed_fls":["230", "270", "330"],
+                    "FLAS":"FL230, FL270, FL330 "
+                },
+                {
+                    "airways":["A593 SADLI Y590 ELGEP Y722", "A593 SADLI Y590 ELGEP B576"],
+                    "suffix":["92D", "95D", "82D", "81D"],
+                    "allowed_fls":["270", "330", "350", "370","410"],
+                    "FLAS": "FL270, FL330, FL350, FL370, FL410"
+                },
+                {
+                    "airways":"A593 SADLI Y590 BEDAR Y591",
+                    "suffix":["94D", "93D", "82D", "81D"],
+                    "allowed_fls":["250", "290", "310", "390"],
+                    "FLAS": "FL250, FL290, FL310, FL390"
+                }
+            ],
+            "SUR":[
+                {
+                    "airways":["A326", "G455"],
+                    "suffix":["92D", "95D", "82D", "81D"],
+                    "allowed_fls":["281", "301", "321", "341", "361", "381", "401"],
+                    "FLAS": "Metric RVSM Westbound Levels"
+                }
+            ],
+            "ODULO":[
+                {
+                    "airways":"B221",
+                    "suffix":["94D","93D","84D","83D"],
+                    "allowed_fls":["291", "311", "331", "351", "371", "391", "411"],
+                    "FLAS": "Metric RVSM Eastbound Levels"
+                }
+            ]
+        }
+    }
+]
