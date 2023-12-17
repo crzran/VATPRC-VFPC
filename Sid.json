@@ -60,6 +60,12 @@
                     "suffix":["91D", "92D", "81D", "82D"],
                     "allowed_fls":["281", "301", "321", "341", "361", "381", "401"],
                     "FLAS":"Metric RVSM Westbound Levels"
+                },
+                {
+                    "airways":"A599",
+                    "suffix":["91D", "92D", "81D", "82D"],
+                    "allowed_fls":["281", "301", "321", "341", "361", "381", "401"],
+                    "FLAS":"Metric RVSM Westbound Levels"
                 }
             ],
             "AND":[
@@ -104,7 +110,7 @@
                 {
                     "airways":"W13",
                     "suffix":["92D","91D", "82D", "81D"],
-                    "allowed_fls":["301", "321", "341", "361", "381", "401"],
+                    "allowed_fls":["276","301", "321", "341", "361", "381", "401"],
                     "FLAS":"Above 8400m Metric RVSM Westbound Levels"
                 }
             ],
@@ -150,12 +156,127 @@
                     "FLAS": "Metric RVSM Westbound Levels"
                 }
             ],
-            "ODULO":[
+            "ODU":[
                 {
                     "airways":"B221",
                     "suffix":["94D","93D","84D","83D"],
                     "allowed_fls":["291", "311", "331", "351", "371", "391", "411"],
                     "FLAS": "Metric RVSM Eastbound Levels"
+                }
+            ]
+        }
+    },
+    {
+        "icao":"ZBAA",
+        "sids":{
+            "ELK":[
+                {
+                    "destinations":["ZSYN"],
+                    "suffix":["9YD", "9ZD", "8ZD"],
+                    "allowed_fls":["207", "187"],
+                    "FLAS":"FL207 (6300m), FL187 (5700m)"
+                },
+                {
+                    "airways":"W40",
+                    "suffix":["9YD", "9ZD", "8ZD"],
+                    "allowed_fls":["291", "311", "331", "351", "371", "391", "411"],
+                    "FLAS": "Metric RVSM Eastbound Levels"
+                }
+            ],
+            "IGM":[
+                {
+                    "destinations":["ZSQD","ZSYT","ZSWH"],
+                    "suffix":["9XD", "9WD", "9YD", "8ZD", "8YD"],
+                    "allowed_fls":["207", "226"],
+                    "FLAS":"FL207 (6300m), FL226 (6900m)"
+                },
+                {
+                    "destinations":["ZSZS", "ZSHC"],
+                    "suffix":["9XD", "9WD", "9YD", "8ZD", "8YD"],
+                    "allowed_fls":["291", "311", "331", "351", "371", "391", "411"],
+                    "FLAS":"Metric RVSM Eastbound Levels"
+                }
+            ],
+            "MUG":[
+                {
+                    "destinations":["ZYTL"],
+                    "suffix":["9XD", "9WD", "9YD", "8ZD", "8YD"],
+                    "allowed_fls":["207", "226"],
+                    "FLAS":"FL207 (6300m), FL226 (6900m)"
+                },
+                {
+                    "destinations":["RKSI", "RKSS"],
+                    "suffix":["9XD", "9WD", "9YD", "8ZD", "8YD"],
+                    "allowed_fls":["246", "266", "291"],
+                    "FLAS":"FL246 (7500m), FL266 (8100m), FL291 (8900m)"
+                },
+                {
+                    "airways":"W34",
+                    "suffix":["9XD", "9WD", "9YD", "8ZD", "8YD"],
+                    "allowed_fls":["291", "311", "331", "351", "371", "391", "411"],
+                    "FLAS":"no less than 8900m (FL291)"
+                }
+            ],
+            "DOT":[
+                {
+                    "destinations":["ZYTX"],
+                    "suffix":["9YD","9ZD", "8YD", "8ZD"],
+                    "allowed_fls":["266", "291"],
+                    "FLAS":"FL266 (8100m), FL291 (8900m)"
+                },
+                {
+                    "destinations":["ZYCC"],
+                    "suffix":["9YD","9ZD", "8YD", "8ZD"],
+                    "allowed_fls":["291","311"],
+                    "FLAS":"FL291 (8900m), FL311 (9500m)"
+                },
+                {
+                    "airways":"B334",
+                    "suffix":["9YD","9ZD", "8YD", "8ZD"],
+                    "allowed_fls":["291", "311", "331", "351", "371", "391", "411"],
+                    "FLAS":"Metric RVSM Eastbound Levels"
+                }
+            ],
+            "IDK":[
+                {
+                    "airways":"B339",
+                    "suffix":["9YD", "9ZD", "8YD", "8ZD"],
+                    "allowed_fls":["281", "301", "321", "341", "361", "381", "401"],
+                    "FLAS":"Metric RVSM Westbound Levels"
+                }
+            ],
+            "BOT":[
+                {
+                    "destinations":["ZBHH"],
+                    "suffix":["9ZD", "8XD", "8YD", "8ZD"],
+                    "allowed_fls":["197", "217"],
+                    "FLAS":"FL197 (6000m), FL217 (6600m)"
+                },
+                {
+                    "airways":"W47",
+                    "suffix":["9ZD", "8XD", "8YD", "8ZD"],
+                    "allowed_fls":["281", "301", "321", "341", "361", "381", "401"],
+                    "FLAS":"Metric RVSM Westbound Levels"
+                }
+            ],
+            "RUS":[
+                {
+                    "destinations":["ZBSJ"],
+                    "suffix":["9YD", "9ZD", "8YD", "8ZD"],
+                    "allowed_fls":["157", "177"],
+                    "FLAS":"FL157 (4800m), FL177 (5400m)"
+                },
+                {
+                    "destinations":["ZBYN"],
+                    "suffix":["9YD", "9ZD", "8YD", "8ZD"],
+                    "allowed_fls":["217", "236", "256"],
+                    "FLAS":"FL217 (6600m), FL236 (7200m), FL256 (7800m) "
+                },
+                {
+                    "airways":"W45",
+                    "suffix":["9YD", "9ZD", "8YD", "8ZD"],
+                    "allowed_fls":["281", "301", "321", "341", "361", "381", "401"],
+                    "FLAS":"Metric RVSM Westbound Levels"
                 }
             ]
         }
