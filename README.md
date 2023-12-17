@@ -40,15 +40,11 @@ VATPRC VFPC (VATSIM 中华人民共和国分部虚拟飞行计划检查器)是�
 - 限制机型
 
 ## How to use:
-- unzip the file in the latest release and drap the entire folder into your /All/Plugins
-- Load up the plugin VFPC.dll in euroscope in "other set - plugin"
-- Add Tag Item type "VATPRC VFPC/VFPC" & function "VATPRC VFPC/ Check FP Menu" to Departure List, it is recommended to set the header name be VFPC and the width be 5
-  ![image](https://github.com/crzran/VATPRC-VFPC/assets/111409071/734e63a7-9148-42e5-b85d-00df5ea0663d)
+- Load up the plugin VFPC.dll
+- Add Tag Item type "HKvACC VFPC/VFPC" & function "HKvACC VFPC/ Check FP Menu" to Departure List, it is recommended to set the header name be VFPC and the width be 5
 
-- 把最新release中的rar解压并放入/All/Plugins
-- 在euroscope-other set-plugin 中加载 VFPC.dll
-- 在dep list添加 “VATPRC VFPC/VFPC", 然后设置左键/右键功能为"VATPRC VFPC/ Check FP Menu"。建议设置header name = VFPC, 宽度为5
- ![image](https://github.com/crzran/VATPRC-VFPC/assets/111409071/734e63a7-9148-42e5-b85d-00df5ea0663d)
+- 加载 VFPC.dll
+- 在dep list添加 “HKvACC VFPC/VFPC", 然后设置左键/右键功能为"HKvACC VFPC/ Check FP Menu"。建议设置header name = VFPC, 宽度为5
 
 ### How to define configurations
 The 'Sid.json'-File is using the JSON file format. Each airport is an object containing the "icao" and a sub-object "sids", which contains all definitions & restrictions. Inside this sub-object are all available SIDs defined by the first route waypoint (i.e. "AMLUH" for AMLUH1B, AMLUH9C, AMLUH9D & AMLUH9G).
@@ -86,12 +82,12 @@ FLR means that the alt that the pilot filed is incorrect according to the SOP. A
 
 CHK表示该插件无法检查改路线。可能的出现原因为：1. 跑道分配不可用（不符合SOP等）， 2. 提交的计划不可用，3. 我程序bug了。若出现这种情况，GitHub上开issue，我看到就回
 
-FLR 表示高度错误。若是插件出问题了，立刻GitHub上开issue
+FLR 表示高度错误。若是插件出问题了，立刻GitHub上开issue （请注意：也有可能是因为飞行计划的高度太高/太低导致被插件认定为flight level wrong，这个请管制员自己多加判断）
 
 ## Notes for ZSPD
-This plugin now **only support ZSPD**. The VFPC for ZSPD is made specifically for SOP ZSPD V2.03 amended on 7/21/2023. The VFPC status will indicate CHK when there is mismatched SID according to the primary and secondary SID and when the pilot's route disobey the ZSPD SOP v2.03
+The VFPC for ZSPD is made specifically for SOP ZSPD V2.03 amended on 7/21/2023. The VFPC status will indicate CHK when there is mismatched SID according to the primary and secondary SID and when the pilot's route disobey the ZSPD SOP v2.03
 
-这个插件如今**只支持上海浦东**。这个VFPC 是根据SOP ZSPD V2.03（2023年7月21日修改版）制作的。这个VFPC只会检查SOP定义的主用和辅用离场跑道定义的程序，其余程序都会显示为CHK。
+这个VFPC 是根据SOP ZSPD V2.03（2023年7月21日修改版）制作的。这个VFPC只会检查SOP定义的主用和辅用离场跑道定义的程序，其余程序都会显示为CHK。
 
 
 ## How to I know the correct altitude
@@ -107,7 +103,15 @@ Left/Right click will also provide another option called Show ALL Checks. This w
 If you get an error on load, please install the [latest C++ redistributables](https://aka.ms/vs/17/release/vc_redist.x86.exe)
 若无法加载插件，请下载[最新的C++可再发行程序包](https://aka.ms/vs/17/release/vc_redist.x86.exe)
 
+## Known bugs
+For ALL airports:
+The definition of altitude is still limited as now it only limits RVSM altitude
+
+For ZBAA:
+The SID of ELKUR still require further investigation and will be amended in the future as it currently cannot distinguish those right and wrong between "W562/W4" and "W37, A461". This can be expected in the full release of this plugin
+
 ### How to define configurations
 Examples can be found in the given Sid.json file.
 定义的例子可以在Sid.json看
+
 
